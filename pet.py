@@ -17,3 +17,10 @@ class Pet:
         self.hunger += 1
         self.energy -= 1
         print(f"{self.name} is playing!")
+
+    def status(self):
+        """Print current status and attributes of the pet."""
+        print(f"--- {self.name} ---")
+        print(f"Type: {self.animal_type}")
+        print(f"Hunger: {self.hunger}")
+        print(f"Energy: {self.energy}")
