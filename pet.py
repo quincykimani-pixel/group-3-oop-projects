@@ -11,13 +11,11 @@ class Pet:
         self.hunger -= 1
         print(f"{self.name} enjoyed the food!")
         print(f"Hunger level: {self.hunger}")
-
     def play(self):
         """Increase hunger by 1 and decrease energy by 1 when playing."""
         self.hunger += 1
         self.energy -= 1
         print(f"{self.name} is playing!")
-
     def status(self):
         """Print current status and attributes of the pet."""
         print(f"--- {self.name} ---")
@@ -25,11 +23,9 @@ class Pet:
         print(f"Hunger: {self.hunger}")
         print(f"Energy: {self.energy}")
 
-# Run interaction script
 if __name__ == "__main__":
     pet1 = Pet("Milo", "Dog")
     pet2 = Pet("Luna", "Cat")
-
     pet1.status()
     pet1.feed()
     pet1.play()
