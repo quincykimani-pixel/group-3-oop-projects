@@ -1,4 +1,5 @@
 class Student:
+  
   def __init__(self, name, age):
     self.name = name
     self.age = age
@@ -23,6 +24,7 @@ class Club:
 student1 = Student("Alice", 18)
 student2 = Student("Brian", 19)
 student3 = Student("Faith", 18)
+student3.introduce()
 gaming_club = Club("Gaming Club")
 robotics_club = Club("Robotics Club")
 gaming_club.add_member(student1)
