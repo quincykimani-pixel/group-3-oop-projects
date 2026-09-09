@@ -24,3 +24,13 @@ class Pet:
         print(f"Type: {self.animal_type}")
         print(f"Hunger: {self.hunger}")
         print(f"Energy: {self.energy}")
+
+# Run interaction script
+if __name__ == "__main__":
+    pet1 = Pet("Milo", "Dog")
+    pet2 = Pet("Luna", "Cat")
+
+    pet1.status()
+    pet1.feed()
+    pet1.play()
+    pet1.status()
